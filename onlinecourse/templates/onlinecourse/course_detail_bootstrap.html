@@ -97,6 +97,91 @@
 
             <!--Check here to see more details Bootstrap checkbox
              https://www.w3schools.com/bootstrap4/bootstrap_forms_inputs.asp-->
+
+             <form id="questionform">
+                <div class="card mt-1">
+                    <div class="card-header"><h5>What is Django?</h5></div>
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="choice_{{choice.id}}"
+                                       class="form-check-input" id="{{choice.id}}"
+                                       value="{{choice.id}}">A web framework
+                            </label>
+                        </div>
+                    <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="choice_{{choice.id}}"
+                                       class="form-check-input" id="{{choice.id}}"
+                                       value="{{choice.id}}">A Movie
+                            </label>
+                        </div>
+                         <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="choice_{{choice.id}}"
+                                       class="form-check-input" id="{{choice.id}}"
+                                       value="{{choice.id}}">A character related to catcher Freeman
+                            </label>
+                        </div>
+                   </div>
+                </div>
+                <div class="card mt-1">
+                    <div class="card-header"><h5>What is a Django Model?</h5></div>
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="choice_{{choice.id}}"
+                                       class="form-check-input" id="{{choice.id}}"
+                                       value="{{choice.id}}">The single, definitive source of information about your data
+                            </label>
+                        </div>
+                    <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="choice_{{choice.id}}"
+                                       class="form-check-input" id="{{choice.id}}"
+                                       value="{{choice.id}}">A web framework
+                            </label>
+                        </div>
+                         <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="choice_{{choice.id}}"
+                                       class="form-check-input" id="{{choice.id}}"
+                                       value="{{choice.id}}">Perform ORM for developers
+                            </label>
+                        </div>
+                   </div>
+                </div>
+                <div class="card mt-1">
+                    <div class="card-header"><h5>What is Django View?</h5></div>
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="choice_{{choice.id}}"
+                                       class="form-check-input" id="{{choice.id}}"
+                                       value="{{choice.id}}">Class-based view
+                            </label>
+                        </div>
+                    <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="choice_{{choice.id}}"
+                                       class="form-check-input" id="{{choice.id}}"
+                                       value="{{choice.id}}">Function-based view
+                            </label>
+                        </div>
+                         <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="choice_{{choice.id}}"
+                                       class="form-check-input" id="{{choice.id}}"
+                                       value="{{choice.id}}">It is a Controller
+                            </label>
+                        </div>
+                   </div>
+                </div>
+            <input class="btn btn-success btn-block" type="submit" value="Submit">
+    </form> -->
     </div>
 </body>
 </html>
