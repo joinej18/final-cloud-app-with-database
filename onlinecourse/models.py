@@ -130,8 +130,6 @@ class Choice(models.Model):
     content = models.CharField(max_length=200)
     is_correct = models.BooleanField(default=False)
 
-    def __str__(self):
-        return self.choice_text
 
 # <HINT> The submission model
 # One enrollment could have multiple submission
